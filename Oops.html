@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- (5) -->
+    
+    <table border="1" cellspacing="0" cellpadding = "10px" style="text-align: center;">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+            </tr>
+        </thead>
+
+        <tbody id="tbody"></tbody>
+
+    </table>
+
+</body>
+
+
+
+<script>
+
+    // =========== (1) ==============
+
+    // class employee {
+    //     constructor(name, salary, hire_date) {
+    //         this.name = name;
+    //         this.salary = salary;
+    //         this.hire_date = hire_date;
+    //     }
+
+    //     e_details(){
+    //         console.log(`Name = ${this.name}`);
+    //         console.log(`Salary = ${this.salary}`);
+    //         console.log(`Hire Date = ${this.hire_date.getFullYear()}`);
+    //     }
+    //     service() {
+    //         let hire_year = this.hire_date.getFullYear();
+    //         let current_year = new Date().getFullYear();
+    //         console.log(`yaer of service = ${current_year - hire_year}`); 
+    //     }
+    // }
+
+    // let e1 = new employee("xyz", 15000, new Date("2009-8-7"));
+    // e1.e_details();
+    // e1.service();
+
+    // ================= (2) ===================
+
+    // class Library {
+    //             constructor(arr) {
+    //                 this.arr = arr;
+    //             }
+
+    //             collectionBook() {
+
+    //                 this.arr = ["maths", "physics", "english"]
+    //                 console.log(this.arr);
+    //             }
+    //             addBook() {
+    //                 console.log("after adding book");
+    //                 console.log("collection of books =", this.arr.push("computer"));
+    //                 console.log(this.arr );
+    //             }
+    //             removeBook() {
+    //                 console.log("after removing book");
+    //                 this.arr.splice(0, 1);
+    //                 console.log("collection of books =", this.arr.length);
+    //                 console.log(this.arr);
+    //             }
+    //         }
+
+    //         let c1 = new Library
+    //         c1.collectionBook()
+    //         c1.addBook()
+    //         c1.removeBook()
+
+        // ==============  (3) =================
+
+    //     class multi_table{
+
+    // multiplication(){
+    // let i=1;
+    // let n=parseInt(prompt("enter value of n ="))
+    // do{
+    //     console.log(n + " *", i  + " =",n*i);
+    //     i++
+    // }while(i<=10)
+    // }
+    // }
+
+    // ============ (4) ==============
+
+//     class result {
+
+// marks(Physics, Chemistry, Biology, Mathematics, Computer) {
+//     this.Physics = Physics;
+//     this.Chemistry = Chemistry;
+//     this.Biology = Biology;
+//     this.Mathematics = Mathematics;
+//     this.Computer = Computer;
+//     console.log(`physics marks = ${this.Physics}
+// chemistry mark = ${this.Chemistry}
+// biology marks = ${this.Biology}
+// mathamatics marks = ${this.Mathematics}
+// computer marks = ${this.Computer}`);
+// }
+// percentage() {
+//     this.avg = (this.Physics + this.Mathematics + this.Chemistry + this.Biology + this.Computer) / 5
+
+//     if (this.avg <= 100 && this.Physics <= 100 && this.Mathematics <= 100 && this.Chemistry <= 100 && this.Biology <= 100 && this.Computer <= 100) {
+//         console.log("percentage", this.avg);
+
+//         if (this.avg >= 90 && this.avg <= 100) {
+//             console.log("Grade - A");
+//         }
+//         else if (this.avg >= 80 && this.avg < 90) {
+//             console.log("Grade - B");
+//         }
+//         else if (this.avg >= 70 && this.avg < 80) {
+//             console.log("Grade - C");
+//         }
+//         else if (this.avg >= 60 && this.avg < 70) {
+//             console.log("Grade - D");
+//         }
+//         else if (this.avg >= 50 && this.avg < 60) {
+//             console.log("Grade - E");
+//         }
+//         else {
+//             console.log("Grade - F");
+//         }
+//     }
+//     else {
+//         console.log("enter valid marks(out of 100)");
+//     }
+// }
+// }
+
+// let r1 = new result
+// r1.marks(100, 60, 88, 86, 74)
+// r1.percentage()
+
+// let m1 = new multi_table
+// m1.multiplication()
+
+    //  ============ (5) ============
+
+
+    let tbody = document.getElementById("tbody")
+
+// let arr = [
+//     {
+//         name: "ABC",
+//         email: "abc@gmail.com",
+//         phone: "12345",
+//     },
+//     {
+//         name: "XYZ",
+//         email: "xyz@gmail.com",
+//         phone: "12345",
+//     },
+//     {
+//         name: "MBK",
+//         email: "mbk@gmail.com",
+//         phone: "12345",
+//     }
+// ]
+
+// arr.map((val, ind) => {
+
+//     let tr = document.createElement("tr")
+//     tr.innerHTML = `<td>${val.name}</td>
+//                     <td>${val.email}</td>
+//                     <td>${val.phone}</td>`
+
+//     tbody.appendChild(tr)
+// })
+
+
+// =========== (6) ===========
+
+// class Restaurant {
+//                 constructor( item) {
+//                     this.item = item;
+//                 }
+//                 menu() {
+//                     this.item = [
+//                         {
+//                             name: "paneer angara",
+//                             price: 100,
+//                             rating: 4
+//                         },
+//                         {
+//                             name: "veg schezwan fried rise",
+//                             price: 120,
+//                             rating: 3.5
+//                         },
+//                         {
+//                             name: "paneer tikka masala",
+//                             price: 140,
+//                             rating: 3
+//                         },
+//                         {
+//                             name: "paneer handi",
+//                             price: 160,
+//                             rating: 4.5
+//                         },
+//                         {
+//                             name: "paneer kadai",
+//                             price: 180,
+//                             rating: 4
+//                         },
+//                         {
+//                             name: "kaju masala",
+//                             price: 100,
+//                             rating: 4
+//                         },
+//                         {
+//                             name: "paneer bhurji",
+//                             price: 120,
+//                             rating: 3.5
+//                         },
+//                         {
+//                             name: "dal-khichdi",
+//                             price: 140,
+//                             rating: 3
+//                         },
+//                         {
+//                             name: "paneer butter masala",
+//                             price: 160,
+//                             rating: 4.5
+//                         },
+//                         {
+//                             name: "palak-paneer",
+//                             price: 180,
+//                             rating: 4
+//                         }
+//                     ]
+
+//                     console.log("total items in manu are =", this.item.length);
+//                     console.log(this.item);
+//                     let sum = 0;
+//                     for (let i = 0; i < this.item.length; i++) {
+//                         sum = sum + this.item[i].rating
+//                     }
+//                     let avg = sum / this.item.length
+//                     console.log("average rating of this manu =",avg);
+
+//                 }
+//                 addItem() {
+//                     console.log("after add new items");
+//                     this.item.push(
+//                         {
+//                             name: "manchurian dry",
+//                             price: 200,
+//                             rating: 4
+//                         },
+//                         {
+//                             name: "veg manchurian fried rise",
+//                             price: 200,
+//                             rating: 4.5
+//                         },
+//                         {
+//                             name: "manchow soup",
+//                             price: 200,
+//                             rating: 3
+//                         }
+//                     )
+//                     console.log("total items in manu are =", this.item.length);
+//                     console.log(this.item);
+//                     let sum = 0;
+//                     for (let i = 0; i < this.item.length; i++) {
+//                         sum = sum + this.item[i].rating
+//                     }
+//                     let avg = sum / this.item.length
+//                     console.log("average rating of this manu =",avg);
+//                 }
+
+//                 removeItem() {
+
+//                     console.log("after removing items");
+//                     this.item.pop()
+//                     console.log("total items in manu are =", this.item.length);
+//                     console.log(this.item);
+//                     console.log(this.item.pop());
+
+//                     let sum = 0;
+//                     for (let i = 0; i < this.item.length; i++) {
+//                         sum = sum + this.item[i].rating
+//                     }
+//                     let avg = sum / this.item.length
+//                     console.log("average rating of this manu =",avg);
+//                 }
+
+//             }
+
+//             let m1 = new Restaurant;
+//             m1.menu()
+//             m1.addItem()
+//             m1.removeItem()
+
+</script>
+</html>
